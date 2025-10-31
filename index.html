@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Result Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background: green;
+            color: white;
+            padding: 20px;
+            margin: 0;
+            font-size: 28px;
+        }
+        form {
+            background: white;
+            display: inline-block;
+            margin-top: 30px;
+            padding: 25px 30px;
+            border-radius: 15px;
+            box-shadow: gray 0px 0px 15px;
+            width: 400px;
+            max-width: 90%;
+        }
+        input {
+            margin: 10px 0;
+            padding: 12px;
+            width: 90%;
+            border: 1px solid gray;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        button {
+            padding: 12px 25px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        button:hover { opacity: 0.8; }
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            font-size: 18px;
+            color: green;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Student Result Management System</h1>
+
+    <!-- Add Student Form -->
+    <form action="https://student-manage-portal-backend-2.onrender.com/addstudent" method="post">
+        <h2>➕ Add New Student</h2>
+        <input type="text" name="name" placeholder="Enter Name" required><br>
+        <input type="text" name="roll" placeholder="Enter Roll No" required><br>
+        <input type="text" name="class" placeholder="Enter Class" required><br>
+        <input type="number" name="marks" placeholder="Enter Marks" required><br>
+        <button type="submit">💾 Add Student</button>
+    </form>
+
+    <br>
+    <!-- View Students Link -->
+    <a href="https://student-manage-portal-backend-2.onrender.com/viewStudents">👀 View All Students</a>
+</body>
+</html>
